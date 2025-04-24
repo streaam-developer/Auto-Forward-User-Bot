@@ -1,102 +1,85 @@
-## 🔄 Auto Forward Bot - Features & Commands Guide
+<p align="center">
+<img src="https://graph.org/file/e223aea8aca83e99162bb.jpg"/>
+<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/hr.gif"/>
 
-We’ve added several useful features and commands to help you control the bot better. Here's the complete list:
+### FEATURES
+ - Forward Message From Public Channel To Your Channel.
+ - Forward Message From Private Channel To Your Channel.
+ - Supports Broadcasts.
+ - Set custom caption.
+ - Custom Button.
+ - Support Restricted Chats.
+ - Skip Duplicate Messages.
+ - Filter Type Of Messages.
+ - Skip Messages Based On Extensions & Keywords & Size.
+ - Deploy to Koyeb + Heroku + Railway.
+ - Developer ZISHAN.
 
-✅ Features & How to Use:
-
-1. Auto Forwarding  
-   Automatically forwards messages from the source chat to the target chat without the “forwarded from” tag.
-
-2. Duplicate Prevention  
-   Already forwarded messages will not be forwarded again.
-
-3. Delay System  
-   Set a custom delay (in seconds) between forwarded messages using the line no `23`  
-   - Usage: setdelay `DELAY_SECONDS` = `5`
-
-4. Status Check  
-   See bot’s current status, `Active ✅`, and `inactive` ❌ `/status`.
-
-5. 👉  All commands list 🌟 
-  
-       ``` /status 
-        ⚡️ View bot status  
-
-        /setdelay [Sec] 
-        ⏱️ Set the delay time.
-   
-        /addadmin
-        ✅ User 1213456789 added as admin.
-
-        /removeadmin
-        ❌ User 1213456789 removed from admins.
-   
-        /skip 
-        🛹 Skip to next message  
-
-        /resume 
-        🏹 Start forwarding  
-
-        /on 
-        ✅ Launch the bot   
-
-        /off 
-        📴 Close the bot 
-
-        /addtarget [ID] 
-        ✅ Add target  
-
-        /removetarget [ID] 
-        😡 Remove target  
-
-        /listtargets 
-        🆔 View Target ID```
+<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/hr.gif"/>
 
 
-### 🚀 Deployment  
-**Set environment variables**
-   - `API_ID`=667788990
-   - `API_HASH`=wwq8325ba83751dfade998899988gh
-   - `SESSION_STRING`=1BtsOGkBu4xsJ0-hjlJkH30Iaz-1Trsdqki61DAhYZz0Dcp1wdk=
-   - `SOURCE_CHAT_ID`=-1001234567890
-   - `TARGET_CHAT_ID`=-1002888859999
-   - `MONGO_URI`=mongodb+srv://woodcraft:angellol@cluster0-&appName=Cluster0
-   - `DEFAULT_ADMINS`=123456789
-   - `PORT`=8080
+### CONFIGS VARIABLES
 
- 
-## Session String Generator [🔗 Telethon Session String Generat](https://colab.research.google.com/github/SudoR2spr/Telethon-Session-Generator/blob/master/Telethon%20Session%20Generator/session-op.ipynb)
+* `BOT_TOKEN` - Get bot token from <a href="https://t.me/BotFather" target="/blank">Bot Father</a>
+* `API_ID` - Get api id from <a href="https://my.telegram.org" target="/blank">Telegram Auth</a>
+* `API_HASH` - Get api hash from <a href="https://my.telegram.org" target="/blank">Telegram Auth</a>
+* `OWNER_ID` - Bot admin/owner user id.
+* `DATABASE_URI` - Mongo Database URL from <a href="https://cloud.mongodb.com" target="/blank">Mongo DB</a>
+* `DATABASE_NAME` - Your database name from mongoDB. (Optional)
+* `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
+* `FORCE_SUB_CHANNEL` : force subscribe channel link
 
-## Supported ⚡️ koyeb
+<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/hr.gif"/>
 
-<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/SudoR2spr/Auto-Forward-User-Bot&branch=master&name=master">
-  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy On Koyeb">
 
-## Deploy To Heroku
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/SudoR2spr/Auto-Forward-User-Bot&template=https://github.com/SudoR2spr/Auto-Forward-User-Bot)
+### DEPLOYEMENT SUPPORT
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/SudoR2spr/Auto-Forward-User-Bot" target="_blank">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" style="height: 50px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/Jisshubot/Jisshu-forward-bot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
-
+</p>
+</details>
+<details><summary>Deploy To Koyeb</summary>
+<br>
   
-## Commands   
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Jisshubot/Jisshu-forward-bot&branch=main&name=Jisshu-forward-bot)
+</details>
+
+<details><summary>Deploy To Render</summary>
+
+<br>
+<a href="https://render.com/deploy?repo=https://github.com/Jisshubot/Jisshu-forward-bot">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a>
+</details>
+
+[<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/hr.gif"/>](https://github.com/Jisshubot)
+
+
+### ALL COMMANDS
+
 ```
-/status
-/on
-/off
+start - Start the bot.
+forward - Forward messages.
+unequify - Delete dublicate files in channel.
+settings - Configure your settings.
+cancel - Cancel ongoing forwarding.
+stats - To check bot stats (Admin Only)
+resetall - To reset all user settings. (Admin Only)
+broadcast - To broadcast any message to all users (Admin Only)
+restart - Restart the bot (Admin Only)
 ```
 
-## 🌐 Web Interface:
-A small Flask server is running in the background. If you open the hosted URL, you’ll see:  
-## 🤖 Activate the Angel bot!
+[<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/hr.gif"/>](https://github.com/Jisshubot)
 
-`Need more help? Just message the Repo Owner.` 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭
+<img src="https://github.com/Jisshubot/Jisshubot/blob/master/resources/hr.gif"/>
+<h1> <img src="https://graph.org/file/9b3bac6be700d65e96c7b.jpg" width="70px" style="border-radius: 50%"> ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ </h1>
+  
+[<img src="https://raw.githubusercontent.com/Jisshubot/Jisshubot/master/resources/telegram_icon.png" width="60px">](https://telegram.im/@JISSHU_BOTS) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/github_icon.png" width="60px">](https://github.com/Jisshubot) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/youtube_icon.png" width="60px">](https://www.youtube.com/@JISSHU-BOTS) [<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/insta_icon.png" width="60px">](https://instagram.com/Zishan_khan565)
 
------
-## Credits: [𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭](https://t.me/Farooq_is_KING)
+[<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/hr.gif"/>](https://github.com/Jisshubot)
 
--  [![Contact Me On Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Farooq_is_king)
-
-Last Edited on: `17/04/2025`
